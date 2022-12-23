@@ -1,0 +1,7 @@
+El programa declara e inicializa los tres tipos de contadores que utilizará: 
+de caracteres, palabras y lineas; 
+además, declara e inicializa las variables que guardan el valor leido actual y previamente. 
+Solicita al usuario que ingrese un caracter con getchar() y entre en una iteración que termina con el final del archivo ingresado
+Si el caracter ingresado es un salto de linea, se aumenta el numero de lineas 
+La función separador devuelve un 1 si el caracter se trata de un espacio, un tab o una nueva linea, lo cual sirve para contar como una palabra más el nuevo caracter ingresado
+finalmente se imprime el número calculado de cada variable de contador.   
