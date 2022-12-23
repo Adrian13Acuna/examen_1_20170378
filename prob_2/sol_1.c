@@ -12,7 +12,8 @@ int main(){
         scanf("%d",&num);
         if((num < 580) && (num > 0)){
             f_num_valid = 1;
-            printf("número valido!");
+            printf("numero valido!");
+            printf("\n"); 
             for (i = 1; i <= num; ++i) {
                 if (num % i == 0) {
                     acum = acum + i;
@@ -20,11 +21,14 @@ int main(){
             }
 
             if(num == acum){
-                printf("%d es un numero PERFECTO",num);    
+                printf("%d es un numero PERFECTO",num);
+                printf("\n");    
             } else if(num>acum){
                 printf("%d es un numero DEFICIENTE",num);
+                printf("\n"); 
             } else if(num<acum){
-                printf("%d es un numero ABUNDANTE",num); 
+                printf("%d es un numero ABUNDANTE",num);
+                printf("\n");  
             }
 
         }
@@ -33,8 +37,11 @@ int main(){
         }
         else {  f_num_valid=0;
                 printf("numero erroneo, vuelva a ingresar numero");
-        }    
+                printf("\n"); 
+        } 
+        f_num_valid = 0;   
     }
     printf("Eso es todo amigos");
+    printf("\n"); 
     
 }
