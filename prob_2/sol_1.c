@@ -7,9 +7,10 @@ int main(){
     f_num_valid = 0;
 
     while(!f_num_valid){
+
         printf("Ingrese numero: ");
         scanf("%d",num);
-        if((num<580) & (num>0)){
+        if((num < 580) && (num > 0)){
             f_num_valid = 1;
             printf("número valido!");
         }
@@ -20,9 +21,9 @@ int main(){
             else {
                 f_num_valid=0;
                 printf("numero erroneo, vuelva a ingresar numero");
-                }
             }
         }
+    }
 
         for (i = 1; i <= num; ++i) {
             if (num % i == 0) {
@@ -41,7 +42,7 @@ int main(){
                     printf("%d es un numero ABUNDANTE",num); 
                 }
                 }
-        }
+    }
     printf("Eso es todo amigos");
     
 }
