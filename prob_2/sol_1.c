@@ -9,7 +9,7 @@ int main(){
     while(!f_num_valid){
 
         printf("Ingrese numero: ");
-        scanf("%d",num);
+        scanf("%d",&num);
         if((num < 580) && (num > 0)){
             f_num_valid = 1;
             printf("número valido!");
