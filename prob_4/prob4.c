@@ -1,15 +1,15 @@
 #include "mbed.h"
 
-#define SW1 p5;
-#define SW2 P6;
+#define SW1 p5
+#define SW2 p6
 
-#define SWA p7;
-#define SWB p8;
-#define SWC p9;
+#define SWA p7
+#define SWB p8
+#define SWC p9
 
-#define RED_LED p10;
-#define BLUE_LED p11;
-#define YELLOW_LED p12;
+#define RED_LED p10
+#define BLUE_LED p11
+#define YELLOW_LED p12
 
 DigitalOut ledR(RED_LED);
 DigitalOut ledB(BLUE_LED);
@@ -29,6 +29,7 @@ int main() {
     while (1) {
         printf("Inicio!");
         esperaPulsador1();
+        int num1,num2,num3;
         num1 = b1*4 + b2*2 + b3;
         esperaPulsador1();
         num2 = b1*4 + b2*2 + b3;
